@@ -1,30 +1,16 @@
 <h1 align="center">Parth Dua</h1>
 
-<p align="center">
-  <b>I build AI agents and ML systems that have to be right, not just plausible.</b><br>
-  MS CS @ UCLA &nbsp;·&nbsp; BS CS (Honors) @ UMD, 3.97 GPA &nbsp;·&nbsp; ML research on NASA GPM satellite data &nbsp;·&nbsp; computational biology preprint co-author
-</p>
+<p align="center">MS CS @ UCLA &nbsp;·&nbsp; 3.97 GPA @ UMD</p>
 
-<p align="center">
-  <a href="https://linkedin.com/in/parth-dua">LinkedIn</a> &nbsp;·&nbsp;
-  <a href="https://devpost.com/parthdua2005">Devpost</a> &nbsp;·&nbsp;
-  <a href="mailto:parth.dua.tech@gmail.com">parth.dua.tech@gmail.com</a>
-</p>
-
-<p align="center">
-  <a href="#featured-builds">Featured builds</a> &nbsp;|&nbsp;
-  <a href="#more-builds">More builds</a> &nbsp;|&nbsp;
-  <a href="#research-and-experience">Research and experience</a> &nbsp;|&nbsp;
-  <a href="#stack">Stack</a>
-</p>
+<p align="center"><samp>
+  <a href="https://www.overleaf.com/project/6a8343a0de4ed3740ebd2c47/share#ab26f9b1148f83dcc336ca94c4349cb32cd7e961bf9069e6">resume</a> &nbsp;·&nbsp;
+  <a href="https://linkedin.com/in/parth-dua">linkedin</a> &nbsp;·&nbsp;
+  <a href="mailto:parth.dua.tech@gmail.com">email</a>
+</samp></p>
 
 ---
 
-**What I work on**
-
-- **Agents with guardrails:** the LLM interprets, deterministic code owns money, time, and permissions, and humans approve what matters.
-- **Retrieval you can trust:** hybrid search, reranking, and reliability layers, evaluated on 500K-document benchmarks.
-- **ML on messy real-world signals:** satellite radar, UWB + LiDAR SLAM, and 120K-tree phylogenetic simulations.
+I build AI agents for messy, high-stakes operations: freight markets, maritime claims, construction sites. The model handles judgment; deterministic code handles money, time, and permissions, so every decision can be audited.
 
 ## Featured builds
 
@@ -32,26 +18,21 @@
 
 **A self-improving demurrage desk that reconciles vessel telemetry with enterprise accounting.**
 
-When a ship overstays its port contract, money is owed in two directions. Breakwater checks the delay against vessel telemetry and the contract PDFs, calculates both claims, routes decisions to the right person, and posts balanced journals. Human corrections become approved, scoped procedures instead of silent behavior changes.
-
-- Deterministic time and money engines (integer minutes and cents), verbatim-quote checks on every extracted fact, role-gated approvals, SHA-256 audit chain
-- Learning loop compares the agent's trace with what humans actually did, then backtests each proposed procedure on historical voyages before it can run
+- Checks port delays against vessel telemetry and contract PDFs, calculates the claims owed in both directions, routes decisions to the right person, and posts balanced journals
+- Deterministic time and money engines, verbatim-quote checks on every extracted fact, role-gated approvals, and a SHA-256 audit chain
+- Learns from human corrections by comparing its trace with what people actually did, then backtests each new procedure on past voyages before it can run
 
 `Next.js` `TypeScript` `Convex` `Claude` `LangChain` `MapLibre`
-
-[Devpost](https://devpost.com/software/breakwater-46yk7q) &nbsp;·&nbsp; [Demo video](https://youtu.be/MlzrFt0Pl9k) &nbsp;·&nbsp; [Code](https://github.com/Parth-Dua/breakwater-submission)
 
 ### 2. [Parley](https://github.com/Parth-Dua/freight-recovery-exchange) &nbsp;·&nbsp; LA Hacks AI Hackathon 2026
 
 **An autonomous freight market where AI agents negotiate privately and coordinate recovery when shipping is disrupted.**
 
-- Shippers book entirely inside ASI:One: a private buyer agent negotiates with five independent carrier uAgents in parallel without revealing its budget, then pays through the Fetch Agent Payment Protocol and Stripe
-- When a carrier withdraws a sailing, every stranded booking is renegotiated at once and cleared jointly by a five-stage lexicographic OR-Tools objective, benchmarked against first-come-first-served
-- Slot-level locking in TimescaleDB means parallel agents can never oversell; every step is recorded and replayable in Mission Control
+- Shippers book entirely inside ASI:One: a private buyer agent negotiates with five carrier agents in parallel without revealing its budget, then pays through the Fetch Agent Payment Protocol and Stripe
+- When a sailing is withdrawn, every stranded booking is renegotiated at once and cleared jointly by a five-stage OR-Tools objective, benchmarked against first-come-first-served
+- Slot-level locking in TimescaleDB means parallel agents can never oversell; every step is replayable in Mission Control
 
 `Python` `Fetch.ai uAgents` `ASI:One` `OR-Tools` `TimescaleDB` `React`
-
-[Devpost](https://devpost.com/software/project-ert3qi512sok) &nbsp;·&nbsp; [Code](https://github.com/Parth-Dua/freight-recovery-exchange)
 
 ### 3. [AnchorVision](https://github.com/Loldude0/AnchorVision) &nbsp;·&nbsp; UMD x Ironsite Startup Shell Hackathon
 
@@ -63,8 +44,6 @@ When a ship overstays its port contract, money is owed in two directions. Breakw
 
 `Python` `RGB-D SLAM` `UWB` `YOLO` `VLM`
 
-[Devpost](https://devpost.com/software/anchorvision) &nbsp;·&nbsp; [Code](https://github.com/Loldude0/AnchorVision)
-
 ### 4. [TemporalGuard](https://github.com/Parth-Dua/TemporalGuard)
 
 **A pre-generation reliability layer that teaches cheap RAG when to answer, abstain, or flag a conflict.**
@@ -75,26 +54,20 @@ When a ship overstays its port contract, money is owed in two directions. Breakw
 
 `Python` `FAISS` `sentence-transformers` `Modal` `LangChain`
 
-[Code](https://github.com/Parth-Dua/TemporalGuard)
-
 ## More builds
 
-| Project | What it does | Built at |
+| Project | What it does | Event |
 |---|---|---|
-| [RAID](https://github.com/Parth-Dua/RAID) | Real-time multiplayer incident-response simulator. Each engineer sees different logs and metrics, and an AI game master nudges the team without solving it. | Personal project |
-| [TriageNav](https://github.com/Parth-Dua/RiageNav) | Voice or text symptom triage with Claude that ranks nearby care on a live crowding and distance map. | Anthropic x Maryland · [Devpost](https://devpost.com/software/triagenav) |
-| [PlatePal](https://github.com/tranade/plate-pal) | Campus marketplace for sharing surplus groceries. 🏆 **Environmental Track** and 🏆 **Best Domain Name**. | Hoya Hacks 2024 · [Devpost](https://devpost.com/software/platepal-ek60rc) |
-| [CrowdCure](https://github.com/virsgandhi20/HopHacks24-Parth-Vir) | Estimates hospital crowding from WiFi signals to route patients to shorter waits. | HopHacks 2024 · [Devpost](https://devpost.com/software/crowdcure) |
-
-## Research and experience
-
-- **ML Research Intern, Cooperative Institute for Satellite Earth System Studies:** low-cost ResNet alternative to radar retrievals for NASA GPM, 3x faster GPU pipelines over multi-TB HDF5, and a two-stage classifier-regressor that fixed model collapse on a 96/4 class imbalance
-- **Undergraduate Researcher, Molloy Lab (UMD):** built the first end-to-end empirical evaluation of ASTRAL-Pro tagging, covering 120K gene trees across 60 SLURM experiments. [Preprint](https://doi.org/10.64898/2026.01.20.700722), with posters at WABI and SURC
-- **Team Lead, Engineering Digital Services (UMD):** led 8 engineers on Pinpoint, the management system for 50+ makerspaces, and automated 40% of low-risk approvals with CODEOWNERS and GitHub Actions
-- **Software Intern, Tech Mahindra:** eliminated $25K+ a month in idle cloud spend with an automated AWS-Nuke pipeline and migrated 4 enterprise apps to AWS using Jenkins and Terraform
+| [TriageNav](https://github.com/Parth-Dua/RiageNav) | Voice or text symptom triage with Claude that ranks nearby care on a live crowding and distance map | Anthropic x Maryland Hackathon |
+| [PlatePal](https://github.com/tranade/plate-pal) | Campus marketplace for sharing surplus groceries. 🏆 Environmental Track, 🏆 Best Domain Name | Hoya Hacks 2024 |
+| [CrowdCure](https://github.com/virsgandhi20/HopHacks24-Parth-Vir) | Estimates hospital crowding from WiFi signals to route patients to shorter waits | HopHacks 2024 |
 
 ## Stack
 
-**Languages:** Python · TypeScript · Java · C · Rust · SQL<br>
-**AI / ML:** PyTorch · LangChain · OpenAI Agents SDK · Claude API · FAISS · scikit-learn<br>
-**Web / Infra:** React · Next.js · Flask · Django · Docker · AWS · Terraform · Modal · Convex
+<table>
+  <tr><td><b>Languages</b></td><td>Python, TypeScript, JavaScript, Java, C, Rust, SQL</td></tr>
+  <tr><td><b>ML</b></td><td>PyTorch, scikit-learn, FAISS, YOLO, OR-Tools</td></tr>
+  <tr><td><b>LLMs & agents</b></td><td>Claude API, OpenAI Agents SDK, LangChain, LangGraph, Fetch.ai uAgents</td></tr>
+  <tr><td><b>Web</b></td><td>React, Next.js, Node.js, Flask, Django, Tailwind</td></tr>
+  <tr><td><b>Data & infra</b></td><td>PostgreSQL / TimescaleDB, Convex, Docker, AWS, Terraform, Modal, GitHub Actions</td></tr>
+</table>
