@@ -5,12 +5,12 @@
 <p align="center"><samp>
   <a href="https://www.overleaf.com/project/6a8343a0de4ed3740ebd2c47/share#ab26f9b1148f83dcc336ca94c4349cb32cd7e961bf9069e6">resume</a> &nbsp;·&nbsp;
   <a href="https://linkedin.com/in/parth-dua">linkedin</a> &nbsp;·&nbsp;
-  <a href="mailto:parth.dua.tech@gmail.com">email</a>
+  parth.dua.tech@gmail.com
 </samp></p>
 
 ---
 
-I build AI agents for messy, high-stakes operations: freight markets, maritime claims, construction sites. The model handles judgment; deterministic code handles money, time, and permissions, so every decision can be audited.
+I like taking what I know into new domains, from shipping and finance to construction and healthcare, and building things that make a real difference for the people who use them.
 
 ## Featured builds
 
@@ -34,7 +34,17 @@ I build AI agents for messy, high-stakes operations: freight markets, maritime c
 
 `Python` `Fetch.ai uAgents` `ASI:One` `OR-Tools` `TimescaleDB` `React`
 
-### 3. [AnchorVision](https://github.com/Loldude0/AnchorVision) &nbsp;·&nbsp; UMD x Ironsite Startup Shell Hackathon
+### 3. [TemporalGuard](https://github.com/Parth-Dua/TemporalGuard)
+
+**An eval-driven RAG project: five iterations teaching a cheap pipeline when to answer, abstain, or flag a conflict.**
+
+- Ran every version on EnterpriseRAG-Bench (512K documents), changing one thing at a time and tracing each failure to retrieval, chunking, or the decision step
+- Hybrid BM25 + dense retrieval and structure-aware chunking lifted recall@5 from **50% to 88%**
+- A pre-generation conflict layer raised safe-decision accuracy from **41% to 77%** and conflict detection from **0% to 60%**, while cutting unsupported answers from 25% to 17.5%
+
+`Python` `FAISS` `BM25` `bge-small` `Modal` `DeepSeek`
+
+### 4. [AnchorVision](https://github.com/Loldude0/AnchorVision) &nbsp;·&nbsp; UMD x Ironsite Startup Shell Hackathon
 
 **UWB-anchored LiDAR SLAM that turns construction walkthroughs into one searchable 4D site map.**
 
@@ -43,16 +53,6 @@ I build AI agents for messy, high-stakes operations: freight markets, maritime c
 - Answers questions like *"what changed in this hallway between 8 and 10 AM?"* with a vision language model grounded in a retrieval index
 
 `Python` `RGB-D SLAM` `UWB` `YOLO` `VLM`
-
-### 4. [TemporalGuard](https://github.com/Parth-Dua/TemporalGuard)
-
-**A pre-generation reliability layer that teaches cheap RAG when to answer, abstain, or flag a conflict.**
-
-- Indexed EnterpriseRAG-Bench (512K documents) on Modal GPUs; hybrid dense + BM25 search with cross-encoder reranking lifted recall from **50% to 88%**
-- Gates every response as `ANSWER` / `NOT_FOUND` / `ABSTAIN` / `CONFLICT`, cutting unsupported answers from **25% to 17.5%** and improving conflict detection **60%**
-- Caching deterministic LLM calls by input hash cut repeat evaluation cost **97%**
-
-`Python` `FAISS` `sentence-transformers` `Modal` `LangChain`
 
 ## More builds
 
